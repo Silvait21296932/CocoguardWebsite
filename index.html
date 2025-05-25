@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -27,7 +28,13 @@
                     </ul>
                 </li>
                 <li><a href="#milestones">Milestones</a></li>
-                <li><a href="#downloads">Downloads</a></li>
+                <li class="dropdown">
+                    <a href="#downloads">Downloads ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#documents">Documents</a></li>
+                        <li><a href="#presentations">Presentations</a></li>
+                    </ul>
+                </li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -389,81 +396,128 @@
         <section id="downloads" class="downloads">
             <div class="container">
                 <h2 class="section-title reveal">Downloads</h2>
-                <p class="downloads-intro reveal">Please find all documents related to this project below.</p>
-                <div class="downloads-grid modern">
-                    <div class="download-item reveal">
-                        <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
-                        <h4>Topic Assessment</h4>
-                        <p>Submitted on 2021/02/25</p>
-                        <div class="download-meta">
-                            <span>Group</span>
-                            <a href="#" class="download-link">Download</a>
+
+                <section id="documents" class="downloads-subcategory">
+                    <h3>Documents</h3>
+                    <p class="downloads-intro reveal">Please find all documents related to this project below.</p>
+                    <div class="downloads-grid modern">
+                        <div class="download-item reveal">
+                            <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Topic Assessment</h4>
+                            <p>Submitted on 2021/02/25</p>
+                            <div class="download-meta">
+                                <span>Group</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
+                        </div>
+                        <div class="download-item reveal">
+                             <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Project Charter</h4>
+                            <p>Submitted on 2021/02/25</p>
+                             <div class="download-meta">
+                                <span>Group</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
+                        </div>
+                        <div class="download-item reveal">
+                             <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Project Proposal</h4>
+                            <p>Submitted on 2021/03/22</p>
+                             <div class="download-meta">
+                                <span>Individual</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
+                        </div>
+                         <div class="download-item reveal">
+                             <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Status Documents I</h4>
+                            <p>Submitted on 2021/07/05</p>
+                             <div class="download-meta">
+                                <span>Individual</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
+                        </div>
+                         <div class="download-item reveal">
+                             <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Status Documents II</h4>
+                            <p>Yet to be submitted, link will be updated soon.</p>
+                             <div class="download-meta">
+                                <span>Individual</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
+                        </div>
+                         <div class="download-item reveal">
+                             <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Research Paper</h4>
+                            <p>Yet to be submitted, link will be updated soon.</p>
+                             <div class="download-meta">
+                                <span>Group</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
+                        </div>
+                         <div class="download-item reveal">
+                             <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Final Report</h4>
+                            <p>Submitted on 2021/10/13</p>
+                             <div class="download-meta">
+                                <span>Individual</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
+                        </div>
+                         <div class="download-item reveal">
+                             <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Poster</h4>
+                            <p>Submitted on 2021/10/13</p>
+                             <div class="download-meta">
+                                <span>Group</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="download-item reveal">
-                         <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
-                        <h4>Project Charter</h4>
-                        <p>Submitted on 2021/02/25</p>
-                         <div class="download-meta">
-                            <span>Group</span>
-                            <a href="#" class="download-link">Download</a>
+                </section>
+
+                <section id="presentations" class="downloads-subcategory">
+                    <h3>Presentations</h3>
+                    <p class="downloads-intro reveal">Please find all presentations related to this project below.</p>
+                    <div class="downloads-grid modern">
+                         <div class="download-item reveal">
+                            <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Project Proposal</h4>
+                            <p>Submitted on 2021/03/14</p>
+                             <div class="download-meta">
+                                <span>Group</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
+                        </div>
+                         <div class="download-item reveal">
+                            <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Progress Presentation I</h4>
+                            <p>Submitted on 2021/07/08</p>
+                             <div class="download-meta">
+                                <span>Group</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
+                        </div>
+                         <div class="download-item reveal">
+                            <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Progress Presentation II</h4>
+                            <p>Submitted on 2021/10/18</p>
+                             <div class="download-meta">
+                                <span>Group</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
+                        </div>
+                         <div class="download-item reveal">
+                            <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
+                            <h4>Final Presentation</h4>
+                            <p>Yet to be submitted, link will be updated soon.</p>
+                             <div class="download-meta">
+                                <span>Group</span>
+                                <a href="#" class="download-link">Download</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="download-item reveal">
-                         <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
-                        <h4>Project Proposal</h4>
-                        <p>Submitted on 2021/03/22</p>
-                         <div class="download-meta">
-                            <span>Individual</span>
-                            <a href="#" class="download-link">Download</a>
-                        </div>
-                    </div>
-                     <div class="download-item reveal">
-                         <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
-                        <h4>Status Documents I</h4>
-                        <p>Submitted on 2021/07/05</p>
-                         <div class="download-meta">
-                            <span>Individual</span>
-                            <a href="#" class="download-link">Download</a>
-                        </div>
-                    </div>
-                     <div class="download-item reveal">
-                         <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
-                        <h4>Status Documents II</h4>
-                        <p>Yet to be submitted, link will be updated soon.</p>
-                         <div class="download-meta">
-                            <span>Individual</span>
-                            <a href="#" class="download-link">Download</a>
-                        </div>
-                    </div>
-                     <div class="download-item reveal">
-                         <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
-                        <h4>Research Paper</h4>
-                        <p>Yet to be submitted, link will be updated soon.</p>
-                         <div class="download-meta">
-                            <span>Group</span>
-                            <a href="#" class="download-link">Download</a>
-                        </div>
-                    </div>
-                     <div class="download-item reveal">
-                         <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
-                        <h4>Final Report</h4>
-                        <p>Submitted on 2021/10/13</p>
-                         <div class="download-meta">
-                            <span>Individual</span>
-                            <a href="#" class="download-link">Download</a>
-                        </div>
-                    </div>
-                     <div class="download-item reveal">
-                         <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
-                        <h4>Poster</h4>
-                        <p>Submitted on 2021/10/13</p>
-                         <div class="download-meta">
-                            <span>Group</span>
-                            <a href="#" class="download-link">Download</a>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </div>
         </section>
 
@@ -473,88 +527,94 @@
                 <div class="team-grid">
                     <!-- Supervisor 1 -->
                     <div class="team-member reveal">
-                        <img src="images/placeholder.jpg" alt="Team Member Name">
+                        <img src="images/placeholder1.jpeg" alt="Team Member Name">
+                        <div class="social-icons-overlay">
+                            <a href="#" class="social-icon google-scholar"><i class="fas fa-graduation-cap"></i></a>
+                            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:cocoguard.sliit@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+                        </div>
                         <h4>Ms.Shashika Lokuliyana</h4>
                         <p class="title">Supervisor</p>
                         <p class="affiliation">Sri Lanka Institute of Information Technology</p>
-                         <p class="department">Department: Information Systems Engineering</p>
-                        <div class="social-links">
-                            <a href="#">G-Scholar</a>
-                            <a href="#">In LinkedIn</a>
-                            <a href="#">E-Mail</a>
-                        </div>
+                         <p class="department">Department: Computer Systems Engineering</p>
                     </div>
                     <!-- Supervisor 2 -->
                     <div class="team-member reveal">
-                        <img src="images/placeholder.jpg" alt="Team Member Name">
+                        <img src="images/placeholder2.jpg" alt="Team Member Name">
+                        <div class="social-icons-overlay">
+                             <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:cocoguard.sliit@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+                             <a href="https://scholar.google.com/citations?user=wOhpii8AAAAJ&hl=en" class="social-icon google-scholar"><i class="fas fa-graduation-cap"></i></a>
+                        </div>
                         <h4>Ms.Pipuni Wijesiri</h4>
                         <p class="title">Co-Supervisor</p>
                         <p class="affiliation">Sri Lanka Institute of Information Technology</p>
                          <p class="department">Department: Software Engineering</p>
-                         <div class="social-links">
-                            <a href="#">In LinkedIn</a>
-                            <a href="#">E-Mail</a>
-                        </div>
                     </div>
                      <!-- External Supervisor -->
                     <div class="team-member reveal">
-                        <img src="images/placeholder.jpg" alt="Team Member Name">
+                        <img src="images/placeholder3.jpg" alt="Team Member Name">
+                        <div class="social-icons-overlay">
+                            <a href="#" class="social-icon google-scholar"><i class="fas fa-graduation-cap"></i></a>
+                            <a href="mailto:cocoguard.sliit@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+                             <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                         <h4>Mr.Damith Liyanaarachchi</h4>
                         <p class="title">External Supervisor</p>
                         <p class="affiliation">Coconut Research Institute of Sri Lanka</p>
                          <p class="department">Division: Crop Protection</p>
-                         <div class="social-links">
-                            <a href="#">G-Scholar</a>
-                            <a href="#">E-Mail</a>
-                        </div>
                     </div> <br
                     <!-- Group Member 1 -->
                     <div class="team-member reveal">
-                        <img src="images/placeholder.jpg" alt="Team Member Name">
+                        <img src="images/placeholder4.jpeg" alt="Team Member Name">
+                        <div class="social-icons-overlay">
+                            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:cocoguard.sliit@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+                             <a href="#" class="social-icon google-scholar"><i class="fas fa-graduation-cap"></i></a>
+                        </div>
                         <h4>Balasooriya R. C.​</h4>
                         <p class="title">Group Leader</p>
                         <p class="affiliation">Sri Lanka Institute of Information Technology</p>
                         <p class="department">Department: Information Technology</p>
-                         <div class="social-links">
-                             <a href="#">In LinkedIn</a>
-                            <a href="#">E-Mail</a>
-                        </div>
                     </div>
                      <!-- Group Member 2 -->
                     <div class="team-member reveal">
-                        <img src="images/placeholder.jpg" alt="Team Member Name">
+                        <img src="images/placeholder5.jpg" alt="Team Member Name">
+                        <div class="social-icons-overlay">
+                             <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:cocoguard.sliit@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+                             <a href="#" class="social-icon google-scholar"><i class="fas fa-graduation-cap"></i></a>
+                        </div>
                         <h4>Gunarathne M. M. S. U.</h4>
                          <p class="title">Group Member</p>
                         <p class="affiliation">Sri Lanka Institute of Information Technology</p>
                         <p class="department">Department: Information Technology</p>
-                         <div class="social-links">
-                             <a href="#">In LinkedIn</a>
-                            <a href="#">E-Mail</a>
-                        </div>
                     </div>
                      <!-- Group Member 3 -->
                     <div class="team-member reveal">
-                        <img src="images/placeholder.jpg" alt="Team Member Name">
+                        <img src="images/placeholder6.jpg" alt="Team Member Name">
+                        <div class="social-icons-overlay">
+                             <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:cocoguard.sliit@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+                             <a href="#" class="social-icon google-scholar"><i class="fas fa-graduation-cap"></i></a>
+                        </div>
                         <h4>Silva T.C.D.​</h4>
                          <p class="title">Group Member</p>
                         <p class="affiliation">Sri Lanka Institute of Information Technology</p>
                         <p class="department">Department: Information Technology</p>
-                         <div class="social-links">
-                             <a href="#">In LinkedIn</a>
-                            <a href="#">E-Mail</a>
-                        </div>
                     </div>
                      <!-- Group Member 4 -->
                     <div class="team-member reveal">
-                        <img src="images/placeholder.jpg" alt="Team Member Name">
+                        <img src="images/placeholder7.jpg" alt="Team Member Name">
+                        <div class="social-icons-overlay">
+                             <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:cocoguard.sliit@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+                             <a href="#" class="social-icon google-scholar"><i class="fas fa-graduation-cap"></i></a>
+                        </div>
                         <h4>Adithya E.L.A.Y.</h4>
                          <p class="title">Group Member</p>
                         <p class="affiliation">Sri Lanka Institute of Information Technology</p>
                         <p class="department">Department: Information Technology</p>
-                         <div class="social-links">
-                             <a href="#">In LinkedIn</a>
-                            <a href="#">E-Mail</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -563,14 +623,14 @@
         <section id="download-app" class="download-app">
             <div class="download-app-background">
                 <!-- Background image or video -->
-                <img src="images/coconut-background.jpg" alt="Coconut Background">
+                <img src="images/background.png" alt="Coconut Background">
                 <div class="overlay"></div>
             </div>
             <div class="container">
                 <div class="download-app-content reveal">
                     <div class="app-logo">
                         <!-- App Logo -->
-                        <img src="images/cocoguard-logo.png" alt="Cocoguard Logo">
+                        <img src="images/CocoGuardLogo.png" alt="Cocoguard Logo">
                     </div>
                     <h2>Download Now!</h2>
                     <p>Cocoguard mobile application is now available for download on Google Play. Click below to get the app now!</p>
