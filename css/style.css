@@ -1378,23 +1378,23 @@ section:nth-child(even) {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 4px solid var(--primary-color); /* Slightly thicker border */
+    border: 4px solid var(--primary-color);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    position: relative; /* Needed for stacking context with overlay */
-    z-index: 1; /* Ensure image is below overlay */
+    position: relative;
+    z-index: 1;
 }
 
 .social-icons-overlay {
     position: absolute;
-    /* Position over the image */
-    top: 20px; /* Matches padding top */
-    left: calc(50% - 70px); /* Center horizontally based on image width */
-    width: 140px; /* Matches image width */
-    height: 140px; /* Matches image height */
-    background: rgba(44, 122, 77, 0.85); /* Slightly less transparent green background */
-    border-radius: 50%; /* Circular overlay */
+    /* Adjust positioning and size to cover the image including the border */
+    top: 20px; /* Based on padding-top of .team-member */
+    left: 20px; /* Based on padding-left of .team-member */
+    width: calc(100% - 40px); /* Cover the width minus total horizontal padding */
+    height: 148px; /* Image height + border top + border bottom */
+    background: rgba(44, 122, 77, 0.85);
+    border-radius: 50%; /* Maintain circular shape */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1402,7 +1402,7 @@ section:nth-child(even) {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 5; /* Ensure overlay is above image */
+    z-index: 5;
 }
 
 .team-member:hover .social-icons-overlay {
