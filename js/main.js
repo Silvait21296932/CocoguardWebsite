@@ -71,13 +71,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         if (targetId !== '#' && targetId !== '' && !isDropdownLink) { // Prevent default for empty links and dropdown parent
              e.preventDefault(); // Only prevent default for valid section links outside dropdown
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
             }
         } else if (isDropdownLink) {
             // For dropdown links, allow default behavior (jumping to section) but close menu

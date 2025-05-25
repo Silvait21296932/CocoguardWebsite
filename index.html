@@ -26,7 +26,7 @@
                         <li><a href="#research-gap">Research Gap</a></li>
                         <li><a href="#research-problem-solution">Research Problem & Solution</a></li>
                         <li><a href="#research-objectives">Research Objectives</a></li>
-                        <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#methodology">Methodology</a></li>
                         <li><a href="#technologies">Technologies</a></li>
                     </ul>
                 </li>
@@ -57,12 +57,12 @@
             <div class="hero-overlay"></div>
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="reveal">Cocoguard Research Project</h1>
-                    <p class="subtitle reveal">Revolutionizing Coconut Farming Through Smart Technology</p>
+                <h1 class="reveal">Cocoguard Research Project</h1>
+                <p class="subtitle reveal">Revolutionizing Coconut Farming Through Smart Technology</p>
                     <a href="#scope" class="scroll-btn">
-                        <span class="scroll-text">Discover More</span>
-                        <span class="scroll-icon"></span>
-                    </a>
+                    <span class="scroll-text">Discover More</span>
+                    <span class="scroll-icon"></span>
+                </a>
                 </div>
             </div>
         </section>
@@ -125,16 +125,16 @@
                         </div>
                         <div class="problem-solution-item reveal">
                             <h4>Proposed Solution</h4>
-                            <p>CocoGuard presents an end-to-end AI and IoT-based mobile platform that empowers farmers with real-time monitoring and intelligent insights for coconut farming. It integrates four smart modules:
-                                1.	Pest Detection: Enhances in-field nut images using Real-ESRGAN and classifies coconut mite infestations with MobileNetV2.
-                                2.	Disease Identification: Detects Grey Leaf Spot with high accuracy using CNNs and boosts interpretability using Grad-CAM++ and LIME.
-                                3.	Soil Fertility Management: Employs IoT sensors and Random Forest models to provide precise NPK fertilizer recommendations based on live field data.
-                                4.	Harvest Prediction: Combines image-based maturity classification with yield history using Random Forest regression to suggest optimal harvest timing.
+                            <p>CocoGuard is an AI and IoT-powered mobile platform designed to assist coconut farmers with real-time insights and smart decision-making. It features four integrated modules:</p>
+                                <p>1.	Pest Detection – Enhances field images with Real-ESRGAN and detects coconut mite using MobileNetV2.</p>
+                               <p>2.	Disease Identification – Uses CNNs with Grad-CAM++ and LIME to identify Grey Leaf Spot and explain predictions.</p>
+                               <p> 3.	Soil Fertility Management – Collects live soil data via IoT sensors and predicts fertilizer needs using Random Forest.</p>
+                               <p> 4.	Harvest Prediction – Analyzes fruit maturity and historical data to forecast optimal harvest time.</p>
                             
-                            This unified system runs via a React Native app and Flask backend, ensuring real-time image processing, field data analysis, and smart alerts. By combining deep learning, explainable AI, and IoT, CocoGuard transforms traditional coconut farming into a data-driven, efficient, and sustainable agricultural model.</p>
-                        </div>
-                    </div>
-                </section>
+                            <p>The system runs through a React Native app and Flask backend, enabling efficient, real-time support for sustainable coconut farming.</p>
+                </div>
+            </div>
+        </section>
 
                 <section id="research-objectives" class="scope-subcategory">
                     <h3>Research Objectives</h3>
@@ -171,29 +171,38 @@
                 </section>
 
                 <section id="methodology" class="scope-subcategory">
-                    <h3>Methodology</h3>
+                   
+                    <h3 class="section-title reveal">Methodology</h3>
                     
                     <div class="methodology-process">
                         <div class="methodology-step reveal">
-                            <div class="step-indicator">A</div>
+                            <div class="step-indicator">
+                                <img src="images/Coconutnut.jpg" alt="Coconut Nut Icon">
+                            </div>
                             <div class="step-description">
                                 <p>Low-resolution field images are enhanced using Real-ESRGAN and classified for mite infestation via MobileNetV2 through a mobile app and Flask API.</p>
                             </div>
                         </div>
                         <div class="methodology-step reveal">
-                            <div class="step-indicator">B</div>
+                            <div class="step-indicator">
+                                <img src="images/CoconutLeaf.jpg" alt="Coconut Leaf Icon">
+                            </div>
                              <div class="step-description">
-                                <p>Coconut maturity is identified using MobileNetV2, and harvest timing is predicted using Random Forest based on user-inputted historical data.</p>
+                                <p>Coconut leaf images are classified using MobileNetV2, with Grad-CAM++ and LIME applied for explainability and deployed via a mobile interface.</p>
                             </div>
                         </div>
                         <div class="methodology-step reveal">
-                            <div class="step-indicator">C</div>
+                            <div class="step-indicator">
+                                <img src="images/Maturity.jpg" alt="Maturity Icon">
+                            </div>
                              <div class="step-description">
                                 <p>Coconut maturity is identified using MobileNetV2, and harvest timing is predicted using Random Forest based on user-inputted historical data.</p>
                             </div>
                         </div>
                          <div class="methodology-step reveal">
-                            <div class="step-indicator">D</div>
+                            <div class="step-indicator">
+                                <img src="images/Soil_IOT.jpg" alt="Soil IoT Icon">
+                            </div>
                              <div class="step-description">
                                 <p>An IoT device captures real-time soil data, which is analyzed by a Random Forest model to generate fertilizer recommendations through a mobile app.</p>
                             </div>
@@ -202,7 +211,8 @@
                 </section>
 
                 <section id="technologies" class="scope-subcategory">
-                    <h3>Tools & Technologies</h3>
+                    <h3 class="section-title reveal">Tools & Technologies</h3>
+                    
                     
                     <div class="tools-technologies-grid">
                         
@@ -342,7 +352,7 @@
                             </div>
                             <p class="technology-name">Grad-CAM++</p>
                              <div class="technology-hover-text">
-                                <p>Explainable AI technique</p>
+                                <p>Saliency Mapping Technique</p>
                             </div>
                         </div>
 
@@ -359,7 +369,7 @@
                             <div class="technology-icon">
                                 <img src="images/icons/mobilenetv2.png" alt="MobileNetV2 Icon">
                             </div>
-                            <p class="technology-name">LIME</p>
+                            <p class="technology-name">MobileNetV2</p>
                              <div class="technology-hover-text">
                                 <p>Explainable AI technique</p>
                             </div>
@@ -382,79 +392,125 @@
 
         <section id="milestones" class="milestones">
             <div class="container">
-                <h2 class="section-title reveal">Milestones</h2>
+                <h2 class="section-title reveal">Project Timeline</h2>
                 <div class="timeline">
                     <div class="timeline-item reveal">
-                        <div class="timeline-date">August 2024
-                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">August 2024</div>
                         <div class="timeline-content">
-                            <div class="timeline-icon"></div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
                             <h4>Project Proposal</h4>
                             <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
-                            <p>Marks Allocated : 6</p>
+                            <div class="timeline-meta">
+                                <span class="marks">Marks: 6</span>
+                            </div>
                         </div>
                     </div>
+
                     <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-date">December 2024</div>
                         <div class="timeline-content">
-                            <div class="timeline-icon"></div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
                             <h4>Progress Presentation I</h4>
-                            <p>Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or inconsistencies in the design/requirements.</p>
-                             <p>Marks Allocated : 6</p>
+                            <p>Progress Presentation I reviews the 50% completion status of the project. This reveals any gaps or inconsistencies in the design/requirements.</p>
+                            <div class="timeline-meta">
+                                <span class="marks">Marks: 6</span>
+                            </div>
                         </div>
                     </div>
+
                     <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-date">March 2025</div>
                         <div class="timeline-content">
-                            <div class="timeline-icon"></div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
                             <h4>Research Paper</h4>
-                            <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge</p>
-                            <p>Marks Allocated : 10</p>
+                            <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge.</p>
+                            <div class="timeline-meta">
+                                <span class="marks">Marks: 10</span>
+                            </div>
                         </div>
                     </div>
-                     <div class="timeline-item reveal">
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-date">March 2025</div>
                         <div class="timeline-content">
-                            <div class="timeline-icon"></div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
                             <h4>Progress Presentation II</h4>
-                            <p>Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with a Poster presesntation which describes the project as a whole.</p>
-                            <p>Marks Allocated : 18</p>
+                            <p>Progress Presentation II reviews the 90% completion status demonstration of the project. Along with a Poster presentation which describes the project as a whole.</p>
+                            <div class="timeline-meta">
+                                <span class="marks">Marks: 18</span>
+                            </div>
                         </div>
                     </div>
-                     <div class="timeline-item reveal">
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-date">June 2025</div>
                         <div class="timeline-content">
-                            <div class="timeline-icon"></div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
                             <h4>Website Assessment</h4>
                             <p>The Website helps to promote our research project and reveals all details related to the project.</p>
-                             <p>Marks Allocated : 2</p>
+                            <div class="timeline-meta">
+                                <span class="marks">Marks: 2</span>
+                            </div>
                         </div>
                     </div>
-                     <div class="timeline-item reveal">
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-date">June 2025</div>
                         <div class="timeline-content">
-                            <div class="timeline-icon"></div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
                             <h4>Logbook</h4>
                             <p>Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.</p>
-                             <p>Marks Allocated : 3</p>
+                            <div class="timeline-meta">
+                                <span class="marks">Marks: 3</span>
+                            </div>
                         </div>
                     </div>
+
                     <div class="timeline-item reveal">
-                         <div class="timeline-date">April 2025</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">April 2025</div>
                         <div class="timeline-content">
-                            <div class="timeline-icon"></div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
                             <h4>Final Report</h4>
-                            <p>Final Report evalutes the completed project done throughout the year. Marks mentioned below includes marks for Individual & group reports and also Final report.</p>
-                            <p>Marks Allocated : 19</p>
+                            <p>Final Report evaluates the completed project done throughout the year. Marks mentioned below includes marks for Individual & group reports and also Final report.</p>
+                            <div class="timeline-meta">
+                                <span class="marks">Marks: 19</span>
+                            </div>
                         </div>
                     </div>
+
                     <div class="timeline-item reveal">
-                         <div class="timeline-date">May 2025</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">May 2025</div>
                         <div class="timeline-content">
-                            <div class="timeline-icon"></div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
                             <h4>Final Presentation & Viva</h4>
                             <p>Viva is held individually to assess each members contribution to the project.</p>
-                            <p>Marks Allocated : 20</p>
+                            <div class="timeline-meta">
+                                <span class="marks">Marks: 20</span>
+                            </div>
                         </div>
                     </div>
                 </div>
