@@ -74,27 +74,33 @@
                     <h3>Literature Survey</h3>
                     <div class="literature-cards-grid">
                         <div class="literature-card reveal">
-                            <h4>Remote Sensing In Agriculture</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque. Proin ac facilisis enim. Etiam euismod, urna eu tincidunt consectetur.</p>
+                            <h4>Pest Detection (Coconut Mite)</h4>
+                            <p>Recent studies have applied CNNs like MobileNetV2 for pest detection, yet they often rely on post-harvest, high-resolution images under controlled conditions. CocoGuard addresses this gap by combining Real-ESRGAN for image enhancement with MobileNetV2 to detect Aceria guerreronis (coconut mite) infestations directly from mobile phone images in the field.</p>
                         </div>
                         <div class="literature-card reveal">
-                            <h4>IoT for Crop Monitoring</h4>
-                            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus.</p>
+                            <h4>Leaf Disease Detection (Grey Leaf Spot)</h4>
+                            <p>While CNNs have shown success in plant disease detection, limited research exists for coconut-specific foliar diseases like Grey Leaf Spot. This component integrates MobileNetV2 with explainable AI (Grad-CAM++ and LIME) to enhance interpretability, improving trust and usability of mobile-based disease detection systems in real-world agricultural environments.</p>
                         </div>
                         <div class="literature-card reveal">
-                            <h4>Data Analytics in Farming</h4>
-                            <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus.</p>
+                            <h4>Maturity & Harvest Prediction</h4>
+                            <p>Existing models classify coconut maturity using CNNs but lack predictive capabilities for optimal harvest scheduling. This component merges image-based maturity detection via MobileNetV2 with Random Forest regression on historical yield data, offering farmers a comprehensive tool for real-time maturity assessment and precise harvest time prediction.</p>
                         </div>
                         <div class="literature-card reveal">
-                            <h4>Plant Disease Detection</h4>
-                            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus.</p>
+                            <h4>Soil Fertility Optimization</h4>
+                            <p>Conventional coconut farming often misuses fertilizers due to a lack of real-time nutrient data. This module employs IoT sensors to collect NPK, pH, and temperature values, feeding a Random Forest model to predict precise fertilizer needs. It bridges the gap between blanket guidelines and field-specific, data-driven recommendations.</p>
                         </div>
                     </div>
                     <div class="references-section reveal">
                         <h4>References</h4>
                         <ul>
-                            <li>1. Author A, et al. (2022). Title of Paper. Journal Name.</li>
-                            <li>2. Author B, et al. (2021). Title of Paper. Journal Name.</li>
+                            <li>1. H. Harikrishna, M. Subramanian, and A. Prakash, “Deep learning approach for coconut maturity classification using MobileNetV2 and VGG16,” Journal of Agricultural Informatics, vol. 13, no. 2, pp. 34–42, 2022.</li>
+                            <li>2. X. Wang, K. Yu, C. Dong, and C. C. Loy, “Real-ESRGAN: Training real-world blind super-resolution with pure synthetic data,” Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW), pp. 1905–1914, 2021..</li>
+                            <li>3. Author A, et al. (2022). Title of Paper. Journal Name.</li>
+                            <li>4. Author A, et al. (2022). Title of Paper. Journal Name.</li>
+                            <li>5. Author A, et al. (2022). Title of Paper. Journal Name.</li>
+                            <li>6. Author A, et al. (2022). Title of Paper. Journal Name.</li>
+                            <li>7. Author A, et al. (2022). Title of Paper. Journal Name.</li>
+                            <li>8. Author B, et al. (2021). Title of Paper. Journal Name.</li>
                         </ul>
                     </div>
                 </section>
@@ -103,20 +109,20 @@
                     <h3>Research Gap</h3>
                     <div class="research-gap-cards-grid">
                         <div class="research-gap-card reveal">
-                            <h4>Identification & Classification</h4>
-                            <p>Current systems lack robust identification and classification of coconut diseases, leading to delayed interventions and reduced yields.</p>
+                            <h4>Pest Detection (Coconut Mite)</h4>
+                            <p>Most prior research focuses on post-harvest mite detection using high-resolution images in controlled settings, unsuitable for real-time field use. There is a lack of studies that enhance in-field mobile images using super-resolution before classification. CocoGuard bridges this by integrating Real-ESRGAN with MobileNetV2 for early, tree-level mite detection.</p>
                         </div>
                         <div class="research-gap-card reveal">
-                            <h4>Severity Assessment</h4>
-                            <p>There is a gap in accurate severity assessment, making it difficult for farmers to prioritize actions and resources effectively.</p>
+                            <h4>Leaf Disease Detection (Grey Leaf Spot)</h4>
+                            <p>Existing models lack focus on Grey Leaf Spot, which mimics natural discoloration, making it hard to detect early. Moreover, current CNN-based tools function as black boxes without visual justification. CocoGuard fills this gap by targeting Grey Leaf Spot and using Grad-CAM++ and LIME to improve trust and transparency.</p>
                         </div>
                         <div class="research-gap-card reveal">
-                            <h4>Information Sharing</h4>
-                            <p>Limited platforms exist for real-time information sharing among stakeholders, hindering collaborative problem-solving.</p>
+                            <h4>Maturity & Harvest Prediction</h4>
+                            <p>Previous models only classify coconut maturity and ignore harvest timing. No existing system integrates maturity detection with historical data for predictive planning. CocoGuard addresses this by combining MobileNetV2 classification with Random Forest regression, delivering actionable harvest forecasts based on user input and past yield records—bridging analysis and real-world planning.</p>
                         </div>
                         <div class="research-gap-card reveal">
-                            <h4>Farmer Education Gaps</h4>
-                            <p>Many farmers lack access to up-to-date education and training on disease management and modern agricultural practices.</p>
+                            <h4>Soil Fertility Optimization</h4>
+                            <p>Sri Lankan farmers rely on generalized fertilizer schedules, lacking field-specific nutrient insights. Past research overlooks real-time NPK sensing and machine learning for fertilizer prediction. CocoGuard closes this gap by using IoT sensors and a Random Forest model to provide precise, location-based nutrient recommendations via a mobile interface.</p>
                         </div>
                     </div>
                 </section>
@@ -126,12 +132,18 @@
                     <div class="problem-solution-container">
                         <div class="problem-solution-item reveal">
                             <h4>Proposed Problem</h4>
-                            <p>Early Detection and Management of Coconut Diseases</p>
-                            <p>Current agricultural practices lack efficient, real-time systems for early detection and management of coconut diseases, resulting in significant crop losses and economic impact.</p>
+                            <p>How can we accurately detect pests, diseases, nutrient imbalances, and maturity stages in coconut farming to improve productivity and decision-making for Sri Lankan farmers?</p>
+                            <p>Addressing the critical issues in coconut cultivation—including pest infestation, foliar diseases, soil mismanagement, and inconsistent harvest timing—requires a unified, intelligent system. Traditional methods are labor-intensive, error-prone, and lack scalability. Early detection and personalized insights are essential to reduce crop loss, improve yield, and promote sustainable farming practices.</p>
                         </div>
                         <div class="problem-solution-item reveal">
                             <h4>Proposed Solution</h4>
-                            <p>Cocoguard proposes an integrated platform utilizing IoT sensors, AI-driven analytics, and user-friendly dashboards to enable early detection, severity assessment, and collaborative management of coconut diseases.</p>
+                            <p>CocoGuard presents an end-to-end AI and IoT-based mobile platform that empowers farmers with real-time monitoring and intelligent insights for coconut farming. It integrates four smart modules:
+                                1.	Pest Detection: Enhances in-field nut images using Real-ESRGAN and classifies coconut mite infestations with MobileNetV2.
+                                2.	Disease Identification: Detects Grey Leaf Spot with high accuracy using CNNs and boosts interpretability using Grad-CAM++ and LIME.
+                                3.	Soil Fertility Management: Employs IoT sensors and Random Forest models to provide precise NPK fertilizer recommendations based on live field data.
+                                4.	Harvest Prediction: Combines image-based maturity classification with yield history using Random Forest regression to suggest optimal harvest timing.
+                            
+                            This unified system runs via a React Native app and Flask backend, ensuring real-time image processing, field data analysis, and smart alerts. By combining deep learning, explainable AI, and IoT, CocoGuard transforms traditional coconut farming into a data-driven, efficient, and sustainable agricultural model.</p>
                         </div>
                     </div>
                 </section>
@@ -142,29 +154,29 @@
                         <div class="objective-item reveal">
                             <span class="objective-number">01</span>
                             <div class="objective-content">
-                                <h4>Objective 1</h4>
-                                <p>Develop a robust, real-time monitoring system for coconut plantations using IoT and AI technologies.</p>
+                                <h4>Pest Detection (Coconut Mite – Ravindu Balasooriya)</h4>
+                                <p>The main objective is to develop an intelligent mobile-based system for early detection of coconut mite infestations directly on trees using field images. The system enhances low-quality images captured by farmers using Real-ESRGAN and classifies them with a lightweight MobileNetV2 model. It aims to minimize crop damage by providing timely identification of Aceria guerreronis infestations. Additional goals include improving model robustness through data augmentation, deploying predictions via a user-friendly app, and ensuring the model functions effectively under varying lighting and camera conditions to support widespread, real-time use in low-resource agricultural settings.</p>
                             </div>
                         </div>
                         <div class="objective-item reveal">
                              <span class="objective-number">02</span>
                             <div class="objective-content">
-                                <h4>Objective 2</h4>
-                                <p>Integrate advanced data analytics for proactive decision-making and disease management.</p>
+                                <h4>Leaf Disease Detection (Grey Leaf Spot – Gunarathne M.M.S.U.)</h4>
+                                <p>The objective is to automate the detection of Grey Leaf Spot, a visually subtle coconut leaf disease, using a deep learning-based mobile solution. A MobileNetV2 model classifies leaf images into healthy, infected, or non-coconut categories. To address trust and transparency, the system integrates Grad-CAM++ and LIME for visual explanation of predictions. The goal is to provide early, accurate disease identification while enhancing farmer trust in AI-based systems. Additional objectives include dataset creation using both field and synthetic images, optimizing the model for mobile deployment, and building an intuitive frontend that supports efficient image uploading and result interpretation.</p>
                             </div>
                         </div>
                         <div class="objective-item reveal">
                              <span class="objective-number">03</span>
                             <div class="objective-content">
-                                <h4>Objective 3</h4>
-                                <p>Enhance sustainability and yield through technology-driven solutions and best practices.</p>
+                                <h4>Maturity & Harvest Prediction (Silva T.C.D.)</h4>
+                                <p>The objective is to create a hybrid system that not only classifies the maturity level of coconuts through image-based analysis but also predicts the ideal harvest date using historical data. MobileNetV2 is used for real-time image classification, while a Random Forest regression model is trained on user-inputted harvest records such as yield volume, date, and location. The system aims to help farmers make data-driven decisions for maximizing harvest quality and reducing premature or delayed harvesting. Additional objectives include field-level data collection, model training, app integration, and presenting customized recommendations via a mobile interface for usability in rural areas.</p>
                             </div>
                         </div>
                         <div class="objective-item reveal">
                              <span class="objective-number">04</span>
                             <div class="objective-content">
-                                <h4>Objective 4</h4>
-                                <p>Empower farmers and stakeholders with accessible, actionable insights and training resources.</p>
+                                <h4>Soil Fertility Optimization (Adithya E.L.A.Y.)</h4>
+                                <p>The primary objective is to develop an IoT-enabled solution for real-time soil monitoring and nutrient recommendation in coconut farming. A custom device collects NPK, pH, temperature, and humidity data using sensors, which is processed by a Random Forest model to provide fertilizer guidance specific to each field. The system addresses the lack of localized nutrient insights and aims to reduce overuse or underuse of fertilizers. Supporting objectives include comparing multiple ML models (XGBoost, Gradient Boosting), optimizing sensor accuracy, integrating a React Native app for user interaction, and promoting precision agriculture through sustainable fertilizer application practices.</p>
                             </div>
                         </div>
                     </div>
@@ -172,29 +184,30 @@
 
                 <section id="methodology" class="scope-subcategory">
                     <h3>Methodology</h3>
+                    
                     <div class="methodology-process">
                         <div class="methodology-step reveal">
                             <div class="step-indicator">A</div>
                             <div class="step-description">
-                                <p>Deploy IoT sensors across coconut plantations for real-time data collection.</p>
+                                <p>Low-resolution field images are enhanced using Real-ESRGAN and classified for mite infestation via MobileNetV2 through a mobile app and Flask API.</p>
                             </div>
                         </div>
                         <div class="methodology-step reveal">
                             <div class="step-indicator">B</div>
                              <div class="step-description">
-                                <p>Analyze collected data using AI and machine learning algorithms.</p>
+                                <p>Coconut maturity is identified using MobileNetV2, and harvest timing is predicted using Random Forest based on user-inputted historical data.</p>
                             </div>
                         </div>
                         <div class="methodology-step reveal">
                             <div class="step-indicator">C</div>
                              <div class="step-description">
-                                <p>Visualize insights through interactive dashboards for farmers and stakeholders.</p>
+                                <p>Coconut maturity is identified using MobileNetV2, and harvest timing is predicted using Random Forest based on user-inputted historical data.</p>
                             </div>
                         </div>
                          <div class="methodology-step reveal">
                             <div class="step-indicator">D</div>
                              <div class="step-description">
-                                <p>Provide training and support to ensure effective adoption and impact.</p>
+                                <p>An IoT device captures real-time soil data, which is analyzed by a Random Forest model to generate fertilizer recommendations through a mobile app.</p>
                             </div>
                         </div>
                     </div>
@@ -540,7 +553,7 @@
                     </div>
                     <!-- Supervisor 2 -->
                     <div class="team-member reveal">
-                        <img src="images/placeholder2.jpg" alt="Team Member Name">
+                        <img src="images/placeholder2.png" alt="Team Member Name">
                         <div class="social-icons-overlay">
                              <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
                             <a href="mailto:cocoguard.sliit@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
