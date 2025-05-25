@@ -13,7 +13,10 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <div class="nav-logo">Cocoguard</div>
+            <div class="nav-logo">
+                <img src="images/CocoGuardLogo.png" alt="Cocoguard Logo" class="nav-logo-img">
+                Cocoguard
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li class="dropdown">
@@ -90,40 +93,25 @@
                             <p>Conventional coconut farming often misuses fertilizers due to a lack of real-time nutrient data. This module employs IoT sensors to collect NPK, pH, and temperature values, feeding a Random Forest model to predict precise fertilizer needs. It bridges the gap between blanket guidelines and field-specific, data-driven recommendations.</p>
                         </div>
                     </div>
-                    <div class="references-section reveal">
-                        <h4>References</h4>
-                        <ul>
-                            <li>1. H. Harikrishna, M. Subramanian, and A. Prakash, “Deep learning approach for coconut maturity classification using MobileNetV2 and VGG16,” Journal of Agricultural Informatics, vol. 13, no. 2, pp. 34–42, 2022.</li>
-                            <li>2. X. Wang, K. Yu, C. Dong, and C. C. Loy, “Real-ESRGAN: Training real-world blind super-resolution with pure synthetic data,” Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW), pp. 1905–1914, 2021..</li>
-                            <li>3. Author A, et al. (2022). Title of Paper. Journal Name.</li>
-                            <li>4. Author A, et al. (2022). Title of Paper. Journal Name.</li>
-                            <li>5. Author A, et al. (2022). Title of Paper. Journal Name.</li>
-                            <li>6. Author A, et al. (2022). Title of Paper. Journal Name.</li>
-                            <li>7. Author A, et al. (2022). Title of Paper. Journal Name.</li>
-                            <li>8. Author B, et al. (2021). Title of Paper. Journal Name.</li>
-                        </ul>
-                    </div>
+                    
                 </section>
 
                 <section id="research-gap" class="scope-subcategory">
                     <h3>Research Gap</h3>
                     <div class="research-gap-cards-grid">
                         <div class="research-gap-card reveal">
-                            <h4>Pest Detection (Coconut Mite)</h4>
-                            <p>Most prior research focuses on post-harvest mite detection using high-resolution images in controlled settings, unsuitable for real-time field use. There is a lack of studies that enhance in-field mobile images using super-resolution before classification. CocoGuard bridges this by integrating Real-ESRGAN with MobileNetV2 for early, tree-level mite detection.</p>
+                            <h4>Multi-Domain Identification & Classification</h4>
+                            <p>There is no unified mobile-based solution in Sri Lanka for detecting coconut pests, leaf diseases, nutrient deficiencies, and fruit maturity stages. Most existing approaches target a single issue in isolation, and visually similar symptoms make field-level AI classification especially challenging without domain-specific tuning.</p>
                         </div>
                         <div class="research-gap-card reveal">
-                            <h4>Leaf Disease Detection (Grey Leaf Spot)</h4>
-                            <p>Existing models lack focus on Grey Leaf Spot, which mimics natural discoloration, making it hard to detect early. Moreover, current CNN-based tools function as black boxes without visual justification. CocoGuard fills this gap by targeting Grey Leaf Spot and using Grad-CAM++ and LIME to improve trust and transparency.</p>
+                            <h4>Actionable Prediction & Timely Intervention</h4>
+                            <p>Current research often stops at detection, lacking predictive insights such as optimal harvest time or required fertilizer quantities. There is limited integration of environmental, historical, or image-based data to support early intervention strategies that improve long-term crop yield and reduce preventable losses.</p>
                         </div>
                         <div class="research-gap-card reveal">
-                            <h4>Maturity & Harvest Prediction</h4>
-                            <p>Previous models only classify coconut maturity and ignore harvest timing. No existing system integrates maturity detection with historical data for predictive planning. CocoGuard addresses this by combining MobileNetV2 classification with Random Forest regression, delivering actionable harvest forecasts based on user input and past yield records—bridging analysis and real-world planning.</p>
+                            <h4>Real-Time Data Use & Farmer Communication</h4>
+                            <p>Many systems fail to provide real-time, location-specific guidance or alert mechanisms for farmers. There is a lack of accessible platforms that integrate image uploads, sensor readings, and explainable AI into a user-friendly mobile application, limiting effective communication between farmers and agricultural experts.</p>
                         </div>
-                        <div class="research-gap-card reveal">
-                            <h4>Soil Fertility Optimization</h4>
-                            <p>Sri Lankan farmers rely on generalized fertilizer schedules, lacking field-specific nutrient insights. Past research overlooks real-time NPK sensing and machine learning for fertilizer prediction. CocoGuard closes this gap by using IoT sensors and a Random Forest model to provide precise, location-based nutrient recommendations via a mobile interface.</p>
-                        </div>
+                        
                     </div>
                 </section>
 
@@ -214,118 +202,178 @@
                 </section>
 
                 <section id="technologies" class="scope-subcategory">
-                    <h3>Technologies</h3>
-                    <div class="technologies-grid">
+                    <h3>Tools & Technologies</h3>
+                    
+                    <div class="tools-technologies-grid">
+                        
                         <div class="technology-item reveal">
                             <div class="technology-icon">
-                                <!-- Python Icon -->
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4V20M4 12H20" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                <img src="images/icons/vscode.png" alt="VS Code Icon">
                             </div>
-                            <p>Python</p>
+                            <p class="technology-name">VS Code</p>
+                            <div class="technology-hover-text">
+                                <p>Code editor</p>
+                            </div>
+                        </div>
+                        
+                        <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/jupyter.png" alt="Jupyter Icon">
+                            </div>
+                            <p class="technology-name">Jupyter</p>
+                             <div class="technology-hover-text">
+                                <p>Notebook environment</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/arduino.png" alt="Arduino IDE Icon">
+                            </div>
+                            <p class="technology-name">Arduino IDE</p>
+                             <div class="technology-hover-text">
+                                <p>For microcontroller programming</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/firebase.png" alt="Firebase Icon">
+                            </div>
+                            <p class="technology-name">Firebase</p>
+                             <div class="technology-hover-text">
+                                <p>Backend services</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/heroku.png" alt="Heroku Icon">
+                            </div>
+                            <p class="technology-name">Heroku</p>
+                             <div class="technology-hover-text">
+                                <p>Cloud platform</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/hivemq.png" alt="HiveMQ Icon">
+                            </div>
+                            <p class="technology-name">HiveMQ</p>
+                             <div class="technology-hover-text">
+                                <p>MQTT Broker</p>
+                            </div>
+                        </div>
+
+                        <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/python.png" alt="Python Icon">
+                            </div>
+                            <p class="technology-name">Python</p>
+                             <div class="technology-hover-text">
+                                <p>Programming language</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/Cplusplus.png" alt="C++ Icon">
+                            </div>
+                            <p class="technology-name">C++</p>
+                             <div class="technology-hover-text">
+                                <p>Programming language</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/reactnative.png" alt="React Native Icon">
+                            </div>
+                            <p class="technology-name">React Native</p>
+                             <div class="technology-hover-text">
+                                <p>Mobile app development</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/tensorflow.png" alt="TensorFlow Icon">
+                            </div>
+                            <p class="technology-name">TensorFlow</p>
+                             <div class="technology-hover-text">
+                                <p>ML framework</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/keras.png" alt="Keras Icon">
+                            </div>
+                            <p class="technology-name">Keras</p>
+                             <div class="technology-hover-text">
+                                <p>NN library</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/opencv.png" alt="OpenCV Icon">
+                            </div>
+                            <p class="technology-name">OpenCV</p>
+                             <div class="technology-hover-text">
+                                <p>Computer Vision library</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/esrgan.png" alt="ESRGAN Icon">
+                            </div>
+                            <p class="technology-name">ESRGAN</p>
+                             <div class="technology-hover-text">
+                                <p>Super-resolution model</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/gradcam.png" alt="Grad-CAM++ Icon">
+                            </div>
+                            <p class="technology-name">Grad-CAM++</p>
+                             <div class="technology-hover-text">
+                                <p>Explainable AI technique</p>
+                            </div>
+                        </div>
+
+                         <div class="technology-item reveal">
+                            <div class="technology-icon">
+                                <img src="images/icons/lime.png" alt="LIME Icon">
+                            </div>
+                            <p class="technology-name">LIME</p>
+                             <div class="technology-hover-text">
+                                <p>Explainable AI technique</p>
+                            </div>
                         </div>
                         <div class="technology-item reveal">
                             <div class="technology-icon">
-                                <!-- React Icon -->
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" stroke="#4a9e6e" stroke-width="2"/><path d="M9.09 9C10.08 8.08 11.5 7.5 12.99 7.5C14.48 7.5 15.9 8.08 16.89 9M7.11 15C8.10 15.92 9.51 16.5 11 16.5C12.49 16.5 13.90 15.92 14.89 15" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                <img src="images/icons/mobilenetv2.png" alt="MobileNetV2 Icon">
                             </div>
-                            <p>React</p>
-                        </div>
-                        <div class="technology-item reveal">
-                            <div class="technology-icon">
-                                <!-- Placeholder Icon (e.g., Cog) -->
-                                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <p class="technology-name">LIME</p>
+                             <div class="technology-hover-text">
+                                <p>Explainable AI technique</p>
                             </div>
-                            <p>Tensorflow</p>
                         </div>
                          <div class="technology-item reveal">
                             <div class="technology-icon">
-                                <!-- Placeholder Icon (e.g., Cog) -->
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                <img src="images/icons/rf.jpg" alt="Random Forest Icon">
                             </div>
-                            <p>Keras</p>
-                        </div>
-                         <div class="technology-item reveal">
-                            <div class="technology-icon">
-                                <!-- Placeholder Icon (e.g., Database) -->
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <ellipse cx="12" cy="5" rx="9" ry="3" stroke="#4a9e6e" stroke-width="2"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" stroke="#4a9e6e" stroke-width="2"/><path d="M21 19c0 1.66-4 3-9 3s-9-1.34-9-3" stroke="#4a9e6e" stroke-width="2"/>
-                                </svg>
+                            <p class="technology-name">Random Forest</p>
+                             <div class="technology-hover-text">
+                                <p>ML algorithm</p>
                             </div>
-                            <p>MongoDB</p>
                         </div>
-                         <div class="technology-item reveal">
-                            <div class="technology-icon">
-                                <!-- Placeholder Icon (e.g., Cloud) -->
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18 10c0-1.7-.9-3.2-2.5-4.1A5 5 0 0 0 11 4C8.3 4 6 6.3 6 9c-1.4 0-2.7.7-3.5 1.8A4 4 0 0 0 5 18h12a3 3 0 0 0 1-5.8V10Z" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <p>Firebase</p>
-                        </div>
-                         <div class="technology-item reveal">
-                            <div class="technology-icon">
-                                <!-- Placeholder Icon (e.g., Cloud) -->
-                                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18 10c0-1.7-.9-3.2-2.5-4.1A5 5 0 0 0 11 4C8.3 4 6 6.3 6 9c-1.4 0-2.7.7-3.5 1.8A4 4 0 0 0 5 18h12a3 3 0 0 0 1-5.8V10Z" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <p>Google Cloud</p>
-                        </div>
-                         <div class="technology-item reveal">
-                            <div class="technology-icon">
-                                <!-- Placeholder Icon (e.g., Network) -->
-                                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="2" y="2" width="20" height="20" rx="2" stroke="#4a9e6e" stroke-width="2"/><path d="M7 12c.6 0 1-.4 1-1V7c0-.6-.4-1-1-1s-1 .4-1 1v4c0 .6.4 1 1 1Z" stroke="#4a9e6e" stroke-width="2"/><path d="M12 17c.6 0 1-.4 1-1v-4c0-.6-.4-1-1-1s-1 .4-1 1v4c0 .6.4 1 1 1Z" stroke="#4a9e6e" stroke-width="2"/><path d="M17 12c.6 0 1-.4 1-1V7c0-.6-.4-1-1-1s-1 .4-1 1v4c0 .6.4 1 1 1Z" stroke="#4a9e6e" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <p>Kafka</p>
-                        </div>
-                         <div class="technology-item reveal">
-                            <div class="technology-icon">
-                                <!-- Placeholder Icon (e.g., Box) -->
-                                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="2" y="7" width="20" height="15" rx="2" stroke="#4a9e6e" stroke-width="2"/><path d="M17 2H7c-.6 0-1 .4-1 1v4h12V3c0-.6-.4-1-1-1Z" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <p>Docker</p>
-                        </div>
-                         <div class="technology-item reveal">
-                            <div class="technology-icon">
-                                <!-- Placeholder Icon (e.g., Code) -->
-                                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m16 18 6-6-6-6M8 6l-6 6 6 6" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.5 4 9.5 20" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <p>Google Colab</p>
-                        </div>
-                         <div class="technology-item reveal">
-                            <div class="technology-icon">
-                                <!-- Placeholder Icon (e.g., Map Pin) -->
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18 10c0 4.5-6 11-6 11s-6-6.5-6-11a6 6 0 0 1 12 0Z" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <p>Google map API</p>
-                        </div>
-                         <div class="technology-item reveal">
-                            <div class="technology-icon">
-                                <!-- Placeholder Icon (e.g., Key) -->
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m21 21-6-6m6-6V7a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h4m5-18v15" stroke="#4a9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <p>Jwt</p>
-                        </div>
+
                     </div>
                 </section>
 
@@ -337,69 +385,76 @@
                 <h2 class="section-title reveal">Milestones</h2>
                 <div class="timeline">
                     <div class="timeline-item reveal">
-                        <div class="timeline-date">March 2021</div>
+                        <div class="timeline-date">August 2024
+                        </div>
                         <div class="timeline-content">
+                            <div class="timeline-icon"></div>
                             <h4>Project Proposal</h4>
                             <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
                             <p>Marks Allocated : 6</p>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 6%;">6%</div>
-                            </div>
                         </div>
                     </div>
                     <div class="timeline-item reveal">
-                        <div class="timeline-date">June 2021</div>
+                        <div class="timeline-date">December 2024</div>
                         <div class="timeline-content">
+                            <div class="timeline-icon"></div>
                             <h4>Progress Presentation I</h4>
-                            <p>Progress Presentation I reviews the 50% completion status of the project. This reveals any gaps or inconsistencies in the design/requirements.</p>
+                            <p>Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or inconsistencies in the design/requirements.</p>
                              <p>Marks Allocated : 6</p>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 50%;">50%</div>
-                            </div>
                         </div>
                     </div>
                     <div class="timeline-item reveal">
-                        <div class="timeline-date">July 2021</div>
+                        <div class="timeline-date">March 2025</div>
                         <div class="timeline-content">
+                            <div class="timeline-icon"></div>
                             <h4>Research Paper</h4>
-                            <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred to in making new knowledge</p>
+                            <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge</p>
                             <p>Marks Allocated : 10</p>
-                             <div class="progress-bar">
-                                <div class="progress" style="width: 10%;">10%</div>
-                            </div>
                         </div>
                     </div>
                      <div class="timeline-item reveal">
-                        <div class="timeline-date">October 2021</div>
+                        <div class="timeline-date">March 2025</div>
                         <div class="timeline-content">
+                            <div class="timeline-icon"></div>
                             <h4>Progress Presentation II</h4>
-                            <p>Progress Presentation II reviews the 100% completion status of the project.</p>
-                            <p>Marks Allocated : 8</p>
-                             <div class="progress-bar">
-                                <div class="progress" style="width: 100%;">100%</div>
-                            </div>
+                            <p>Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with a Poster presesntation which describes the project as a whole.</p>
+                            <p>Marks Allocated : 18</p>
                         </div>
                     </div>
                      <div class="timeline-item reveal">
-                        <div class="timeline-date">January 2022</div>
+                        <div class="timeline-date">June 2025</div>
                         <div class="timeline-content">
+                            <div class="timeline-icon"></div>
+                            <h4>Website Assessment</h4>
+                            <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+                             <p>Marks Allocated : 2</p>
+                        </div>
+                    </div>
+                     <div class="timeline-item reveal">
+                        <div class="timeline-date">June 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-icon"></div>
+                            <h4>Logbook</h4>
+                            <p>Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.</p>
+                             <p>Marks Allocated : 3</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                         <div class="timeline-date">April 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-icon"></div>
                             <h4>Final Report</h4>
-                            <p>The final report summarizes the entire project, including findings, methodologies, and outcomes.</p>
-                             <p>Marks Allocated : 10</p>
-                             <div class="progress-bar">
-                                <div class="progress" style="width: 100%;">100%</div>
-                            </div>
+                            <p>Final Report evalutes the completed project done throughout the year. Marks mentioned below includes marks for Individual & group reports and also Final report.</p>
+                            <p>Marks Allocated : 19</p>
                         </div>
                     </div>
-                     <div class="timeline-item reveal">
-                        <div class="timeline-date">March 2022</div>
+                    <div class="timeline-item reveal">
+                         <div class="timeline-date">May 2025</div>
                         <div class="timeline-content">
-                            <h4>Demonstration</h4>
-                            <p>A demonstration of the working system to relevant stakeholders and evaluators.</p>
-                             <p>Marks Allocated : 10</p>
-                             <div class="progress-bar">
-                                <div class="progress" style="width: 100%;">100%</div>
-                            </div>
+                            <div class="timeline-icon"></div>
+                            <h4>Final Presentation & Viva</h4>
+                            <p>Viva is held individually to assess each members contribution to the project.</p>
+                            <p>Marks Allocated : 20</p>
                         </div>
                     </div>
                 </div>
@@ -416,24 +471,6 @@
                     <div class="downloads-grid modern">
                         <div class="download-item reveal">
                             <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
-                            <h4>Topic Assessment</h4>
-                            <p>Submitted on 2021/02/25</p>
-                            <div class="download-meta">
-                                <span>Group</span>
-                                <a href="#" class="download-link">Download</a>
-                            </div>
-                        </div>
-                        <div class="download-item reveal">
-                             <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
-                            <h4>Project Charter</h4>
-                            <p>Submitted on 2021/02/25</p>
-                             <div class="download-meta">
-                                <span>Group</span>
-                                <a href="#" class="download-link">Download</a>
-                            </div>
-                        </div>
-                        <div class="download-item reveal">
-                             <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
                             <h4>Project Proposal</h4>
                             <p>Submitted on 2021/03/22</p>
                              <div class="download-meta">
@@ -441,7 +478,7 @@
                                 <a href="#" class="download-link">Download</a>
                             </div>
                         </div>
-                         <div class="download-item reveal">
+                        <div class="download-item reveal">
                              <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
                             <h4>Status Documents I</h4>
                             <p>Submitted on 2021/07/05</p>
@@ -450,7 +487,7 @@
                                 <a href="#" class="download-link">Download</a>
                             </div>
                         </div>
-                         <div class="download-item reveal">
+                        <div class="download-item reveal">
                              <div class="download-icon"><!-- SVG icon placeholder -->📄</div>
                             <h4>Status Documents II</h4>
                             <p>Yet to be submitted, link will be updated soon.</p>
@@ -667,12 +704,6 @@
                     <form class="contact-form">
                         <input type="text" placeholder="Name" required>
                         <input type="email" placeholder="Email" required>
-                        <select name="inquiry" required>
-                            <option value="">Select Inquiry Type</option>
-                            <option value="partnership">Research Partnership</option>
-                            <option value="demo">Request Demo</option>
-                            <option value="general">General Inquiry</option>
-                        </select>
                         <textarea placeholder="Message" required></textarea>
                         <button type="submit">Send Message</button>
                     </form>
