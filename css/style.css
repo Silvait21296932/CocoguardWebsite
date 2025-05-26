@@ -1568,7 +1568,7 @@ section:nth-child(even) {
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 50px; /* Increased margin bottom */
     border: 4px solid var(--primary-color);
     display: block;
     margin-left: auto;
@@ -1580,11 +1580,12 @@ section:nth-child(even) {
 .social-icons-overlay {
     position: absolute;
     /* Adjust positioning and size to cover the image including the border */
-    top: 20px; /* Based on padding-top of .team-member */
-    left: 20px; /* Based on padding-left of .team-member */
-    width: calc(100% - 40px); /* Cover the width minus total horizontal padding */
-    height: 148px; /* Image height + border top + border bottom */
-    background: rgba(44, 122, 77, 0.85);
+    top: 50%; /* Center vertically relative to team-member */
+    left: 50%; /* Center horizontally relative to team-member */
+    width: 148px; /* Image width + border */
+    height: 148px; /* Image height + border */
+    transform: translate(-50%, -50%); /* Adjust for the overlay's own size */
+    background: none; /* Remove background color */
     border-radius: 50%; /* Maintain circular shape */
     display: flex;
     justify-content: center;
@@ -1602,7 +1603,7 @@ section:nth-child(even) {
 }
 
 .social-icons-overlay .social-icon {
-    color: white;
+    color: black; /* Changed color to black */
     font-size: 26px;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -1670,13 +1671,14 @@ section:nth-child(even) {
      .team-member img {
         width: 120px;
         height: 120px;
-         margin-bottom: 15px; /* Adjusted margin */
+         margin-bottom: 20px; /* Adjusted margin */
     }
-    .team-member .social-icons-overlay {
-        top: 20px; /* Matches padding top */
-        left: calc(50% - 60px); /* Center horizontally */
-        width: 120px;
-        height: 120px;
+    .social-icons-overlay {
+        width: 128px; /* Image width + border */
+        height: 128px; /* Image height + border */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for overlay size */
         gap: 10px;
     }
     .social-icons-overlay .social-icon {
