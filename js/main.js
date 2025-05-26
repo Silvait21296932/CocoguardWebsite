@@ -137,6 +137,62 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
+// Gallery Slideshow
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("gallery-slide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  // Remove active class from all dots
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-dot", "");
+  }
+  // Display the current slide and add active class to the corresponding dot
+  slides[slideIndex-1].style.display = "block";
+  if (dots.length > 0) { // Check if dots exist
+      dots[slideIndex-1].className += " active-dot";
+  }
+}
+
+// Auto slideshow (optional)
+// let autoSlideIndex = 0;
+// autoShowSlides();
+
+// function autoShowSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("gallery-slide");
+//    let dots = document.getElementsByClassName("dot");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//    for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active-dot", "");
+//   }
+//   autoSlideIndex++;
+//   if (autoSlideIndex > slides.length) {autoSlideIndex = 1}
+//   slides[autoSlideIndex-1].style.display = "block";
+//    if (dots.length > 0) { // Check if dots exist
+//       dots[autoSlideIndex-1].className += " active-dot";
+//    }
+//   setTimeout(autoShowSlides, 5000); // Change image every 5 seconds
+// }
+
 // Lazy Loading Images
 document.addEventListener('DOMContentLoaded', () => {
     const lazyImages = document.querySelectorAll('img[data-src]');
